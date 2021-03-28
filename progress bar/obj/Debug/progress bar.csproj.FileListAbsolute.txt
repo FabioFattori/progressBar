@@ -13,3 +13,18 @@ C:\Users\fabio\Desktop\progress bar\progress bar\obj\Debug\progress bar.csproj.G
 C:\Users\fabio\Desktop\progress bar\progress bar\obj\Debug\progress bar.csproj.CoreCompileInputs.cache
 C:\Users\fabio\Desktop\progress bar\progress bar\obj\Debug\progress bar.exe
 C:\Users\fabio\Desktop\progress bar\progress bar\obj\Debug\progress bar.pdb
+C:\Users\fabio\Desktop\progressBar\progress bar\bin\Debug\progress bar.exe.config
+C:\Users\fabio\Desktop\progressBar\progress bar\bin\Debug\progress bar.exe
+C:\Users\fabio\Desktop\progressBar\progress bar\bin\Debug\progress bar.pdb
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar.csprojAssemblyReference.cache
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\MainWindow.g.cs
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\App.g.cs
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar_MarkupCompile.cache
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar_MarkupCompile.lref
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\MainWindow.baml
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar.g.resources
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress_bar.Properties.Resources.resources
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar.csproj.GenerateResource.cache
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar.exe
+C:\Users\fabio\Desktop\progressBar\progress bar\obj\Debug\progress bar.pdb

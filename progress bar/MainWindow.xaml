@@ -18,7 +18,8 @@
             </ProgressBar.RenderTransform>
         </ProgressBar>
         <Button x:Name="btn_leggiFile" Content="leggi file" HorizontalAlignment="Left" Height="67" Margin="233,106,0,0" VerticalAlignment="Top" Width="292" Click="btn_leggiFile_Click"/>
-        <Label x:Name="lbl_caratteri" Content="Label" HorizontalAlignment="Left" Height="35" Margin="601,192,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="lbl_caratteri" Content="" HorizontalAlignment="Left" Height="35" Margin="354,331,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label Content="caratteri in file:" HorizontalAlignment="Left" Height="35" Margin="188,331,0,0" VerticalAlignment="Top" Width="140"/>
 
     </Grid>
 </Window>

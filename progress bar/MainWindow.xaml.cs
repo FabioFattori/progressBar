@@ -1,19 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Threading;
-using System.IO;
 
 namespace progress_bar
 {
@@ -24,37 +13,59 @@ namespace progress_bar
     {
         double progressoDellaBarra;
         int caratteriPresenti;
+
+        string fileName;
         public MainWindow()
         {
             InitializeComponent();
+            fileName = "Data.txt";
+
+
             progressoDellaBarra = progressbar.Minimum;
+            progressbar.Maximum = CalcoloRighe();
             caratteriPresenti = 0;
             ProgressoDellaBarra();
+        }
+
+        public int CalcoloRighe()
+        {
+            int i = 0;
+            using (StreamReader sr = new StreamReader(fileName))
+            {
+                while (!sr.EndOfStream)
+                {
+                    sr.ReadLine();
+                    i++;
+                }
+            }
+            return i;
         }
 
         private void btn_leggiFile_Click(object sender, RoutedEventArgs e)
         {
 
-            using (StreamReader sr = new StreamReader("Data.txt"))
+            using (StreamReader sr = new StreamReader(fileName))
             {
 
                 while (!sr.EndOfStream)
                 {
-                    string[] appoggio = sr.ReadLine().Split();
+
+                    char[] appoggio = sr.ReadLine().ToCharArray();
                     caratteriPresenti += appoggio.Length;
-                    progressoDellaBarra++;
+                    progressoDellaBarra+=1;
+                    Thread.Sleep(200);
                 }
             }
-            //lbl_caratteri.Content(caratteriPresenti.ToString());
+            lbl_caratteri.Content = caratteriPresenti.ToString();
         }
 
         private async void ProgressoDellaBarra()
         {
             await Task.Run(() =>
             {
-                while (true) 
+                while (true)
                 {
-                    Thread.Sleep(1);
+                    Thread.Sleep(200);
                     this.Dispatcher.BeginInvoke(new Action(() =>
                     {
                         progressbar.Value = progressoDellaBarra;
